@@ -1,0 +1,47 @@
+Objects
+
+--player
+
+-gold
+-bulkAmount
+-fps
+-visualFps
+-level
+
+--stats
+
+-kills
+-deaths
+-timePlayed
+-maxLevel
+
+--upgrades class
+
+{GENERAL}
+-name //Will be used in the tooltip as a header
+-buttonName //Will be used on the button as a +1 buttonName. ex. +1 dmg
+-user(as an array of 1 or 2 elements. determines what variable the upgrade will interact with)
+-level requirement to unlock
+-special condition for unlocking(function())[ex. unlocked by a different upgrade]
+-level requirement to show(default -2?)
+-alternative condition to show(function())
+
+{EFFECTS}
+-bought amount
+-max level(should there be calc for max level?)
+-cost calculation(function(n))
+-effect calculation(function(n))
+
+{VISUAL}
+-icon path
+-button dom element
+-extra classes?
+-tooltip calculation(function(start, end))
+-display style (will be +X name)
+
+
+--helper functions
+buyCheapestUpgrade()
+switchTab()
+nextUpgradeLevel()
+letterNotation(Decimal number)
